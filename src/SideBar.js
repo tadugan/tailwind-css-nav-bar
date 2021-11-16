@@ -1,5 +1,5 @@
 import { BsPlus, BsFillLightningFill, BsGearFill } from 'react-icons/bs';
-import { FaFire, FaPoo } from 'react-icons/fa';
+import { FaFire } from 'react-icons/fa';
 import SideBarIcon from './SideBarIcon';
 
 function SideBar() {
@@ -9,10 +9,10 @@ function SideBar() {
                         flex flex-col
                         bg-gray-900 text-white shadow-lg'
         >
-            <SideBarIcon icon={<FaFire size='28' />} />
+            <SideBarIcon icon={<FaFire size='28' />} text='tooltip' />
             <SideBarIcon icon={<BsPlus size='32' />} />
             <SideBarIcon icon={<BsFillLightningFill size='20' />} />
-            <SideBarIcon icon={<FaPoo size='20' />} />
+            <SideBarIcon icon={<BsGearFill size='20' />} />
         </div>
     );
 }
